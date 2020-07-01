@@ -1,16 +1,19 @@
-# kauntaa
+# Kauntaa
 
-A new Flutter application.
+A Flutter wear OS project.
 
-## Getting Started
+![Kaunta](https://user-images.githubusercontent.com/50237142/86193226-b1506a00-bb4b-11ea-9d41-c666b605fdde.png)
 
-This project is a starting point for a Flutter application.
+Using [Flutter_wear](https://pub.dev/packages/flutter_wear) package to develop Kaunta. 
 
-A few resources to get you started if this is your first Flutter project:
+# Project features 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- Kaunta is a basic counter application , similar to the basic starting flutter hello world project. 
+- Using [Shared_preferences](https://pub.dev/packages/shared_preferences) to store the latest number counted on the watch.
+- Using [Random_color](https://pub.dev/packages/random_color#-readme-tab-) to add some random colors to UI every time the counter is pressed. 
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+# TODOs 
+- [ ] Adding some UI features.
+- [ ] Adding history of saved counts.
+- [ ] Publish to google play store.
