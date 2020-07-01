@@ -55,14 +55,24 @@ class _MyAppState extends State<MyApp> {
                             child: Text(
                               '$_counter',
                               style: TextStyle(
-                                color: _textColor,
-                                fontWeight: FontWeight.w900
-                              ),
+                                  color: _textColor,
+                                  fontWeight: FontWeight.w900),
                             ),
                           ),
                           FloatingActionButton(
                             onPressed: _counterPressed,
                             child: Text('Count!'),
+                          ),
+                          GestureDetector(
+                            child: Text('reset'),
+                            onTap: () async {
+                              final prefs =
+                                  await SharedPreferences.getInstance();
+                              await prefs.setInt('counter', 0);
+                              setState(() {
+                                _counter=0;
+                              });
+                            },
                           )
                         ],
                       ),
